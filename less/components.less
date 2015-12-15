@@ -1,0 +1,78 @@
+.fully-clickable {
+    .panel-title a {
+        display: block;
+        margin: -10px -15px;
+        padding: 10px 15px;
+    }
+}
+
+/**
+ * Fixed header at the top of tables with scrollable body.
+ */
+.table-fixed-header {
+    .table-fixed-header-top {
+        border-bottom: 0;
+        >thead>tr>th {
+            border-bottom-width: 1px;
+        }
+    }
+    thead th {
+        display: block;
+        float: left;
+        border-left: 0 !important;
+    }
+}
+
+/**
+ * Nice looking file input button
+ */
+.fake-file-input {
+    position: relative;
+    height: 50px;
+    line-height: 47px;
+    width: 100%;
+
+    input[type=file] {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    input[type=file], .btn {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .btn {
+        padding: 0;
+        line-height: inherit;
+        font-size: 1.3em;
+        z-index: 0;
+    }
+}
+
+/**
+ * Loader
+ */
+.loading {
+    .loader {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .5s ease;
+    background: rgba(0,0,0,.2) url('../img/loader.gif') center center no-repeat;
+    z-index: -1;
+}

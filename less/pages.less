@@ -1,0 +1,60 @@
+/**
+ * Main Page (Browser/Overview/Export)
+ */
+.main-page {
+    json-tree .key {
+        cursor: pointer;
+    }
+
+    .parent-node-choices {
+        margin: 20px;
+        text-align: left;
+    }
+
+    .overview {
+        th {
+            position: relative;
+            height: 37px;
+        }
+
+        .th-btns {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            line-height: 15px;
+        }
+
+        .th-text {
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 30px;
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+    }
+
+    .tree-view {
+        max-height: @page_module_height;
+        height: @page_module_height;
+    }
+
+    .table-view {
+        max-height: @page_module_height - @overview_padding_needed;
+    }
+}
+
+/**
+ * Import Page
+ */
+.import-page {
+    .paste-form {
+        height: 300px;
+        max-width: 100%;
+        min-width: 100%;
+        margin-bottom: none;
+    }
+}

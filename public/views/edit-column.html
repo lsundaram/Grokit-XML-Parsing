@@ -1,0 +1,42 @@
+<div class="modal-header">
+    <h3 class="modal-title">Column Export Attributes</h3>
+</div>
+<div class="modal-body form-horizontal">
+    <div class="form-group">
+        <div class="col-md-2">
+            <label for="type" class="control-label">
+                Type
+            </label>
+        </div>
+        <div class="col-md-9">
+            <select name="type" id="type" class="form-control" ng-model="selectedTypeName">
+                <option ng-repeat="option in types" ng-selected="type.name == option.name">{{ option.name }}</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-2">
+            <label for="nullable" class="control-label">
+                Nullable
+            </label>
+        </div>
+        <div class="col-md-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="nullable" id="nullable" ng-model="type.nullable" />
+                    Allow null values
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <!--<div class="pull-left">
+        <button class="btn btn-warning" type="button" ng-click="$dismiss('cancel')">Cancel</button>
+    </div>-->
+    <button class="btn btn-primary" type="button" ng-click="$dismiss()">OK</button>
+</div>
+<div ng-class="{loading: loading}">
+    <div class="loader"></div>
+</div>

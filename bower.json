@@ -1,0 +1,32 @@
+{
+  "name": "grokit-web-import",
+  "description": "Grokit Web Import",
+  "main": "gulpfile.js",
+  "authors": [
+    "Zane Hooper"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cabloo/grokit-web-import",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "~1.4.7",
+    "angular-json-tree": "*",
+    "lodash": "~3.10.1",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "angular-route": "~1.4.7",
+    "angular-bootstrap": "~0.14.3",
+    "angular-toastr": "~1.5.0",
+    "xml2js": "~0.4.15"
+  }
+}

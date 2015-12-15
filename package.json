@@ -1,0 +1,33 @@
+{
+  "name": "grokit-web-import",
+  "version": "0.0.1",
+  "description": "Grokit Web Import",
+  "contributors": [
+    {
+      "name": "Zane Hooper"
+    }
+  ],
+  "scripts": {
+    "start": "gulp watch",
+    "postinstall": "tsd reinstall -so && gulp"
+  },
+  "keywords": [],
+  "license": "",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-debug": "^2.1.0",
+    "gulp-inject": "^1.5.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-tslint": "^3.2.0",
+    "gulp-typescript": "^2.8.0",
+    "gulp-tsd": "^0.0.4",
+    "tsd": "^0.6.3",
+    "gulp-concat": "~2.6.0",
+    "gulp-less": "~3.0.3",
+    "js-yaml": "~3.4.3",
+    "lodash": "~3.10.1",
+    "merge-stream": "~1.0.0"
+  }
+}

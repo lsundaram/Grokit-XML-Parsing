@@ -1,0 +1,55 @@
+/**
+ * Remove outline from clicked items
+ */
+a, .btn {
+    outline: none !important;
+}
+
+/**
+ * Button that takes up the width of its container.
+ */
+.btn-full {
+    width: 100%;
+}
+
+.panel>.btn-full {
+    line-height: 30px;
+    border-radius: 0 0 4px 4px;
+}
+
+a[ng-click] {
+    cursor: pointer;
+}
+
+.no-underline {
+    &, &:hover {
+        text-decoration: none;
+    }
+}
+
+.text-red {
+    color: #900;
+}
+
+td.disabled {
+    color: #aaa;
+    font-style: italic;
+}
+
+.relative {
+    position: relative;
+}
+
+.scrollable {
+    overflow: auto;
+}
+
+/**
+ * Display over the parent's borders.
+ */
+.fill-panel {
+    margin: 0 -1px;
+    >table {
+        margin-bottom: 0;
+    }
+}

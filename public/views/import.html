@@ -1,0 +1,113 @@
+<div class="container import-page">
+    <div class="row">
+        <div class="col-md-5">
+            <form class="panel panel-default" ng-submit="submitPasted()">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Paste Contents
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <textarea ng-model="pasted" class="paste-form form-control"></textarea>
+                </div>
+                <div class="panel-footer clearfix">
+                    <div class="pull-right">
+                        <input type="submit" class="btn btn-success" value="Import" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2 text-center">
+            <br />
+            <br />
+            <i>- or -</i>
+            <br />
+            <br />
+        </div>
+        <div class="col-md-5">
+            <div class="panel panel-default relative" ng-class="{loading: loading}">
+                <b class="loader"></b>
+
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Import File
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="fake-file-input">
+                        <input type="file" file-input="file" />
+                        <a class="btn btn-xl btn-info">Import File</a>
+                    </div>
+                </div>
+            </div>
+
+            <uib-accordion close-others="true" class="fully-clickable">
+                <uib-accordion-group heading="Example JSON" is-open="true">
+<pre class="code">
+{
+    "test": "useless data",
+    "test2": ["more useless data", "junk"],
+    "nested": {
+        "items": [
+            {
+                "test": "From Item 1",
+                "a": "a"
+            },
+            {
+                "test": "From Item 2",
+                "deeply": {
+                    "nested": {
+                        "items": "work"
+                    }
+                }
+            },
+            {
+                "test": "From Item 3",
+                "a": "b",
+                "c": "d"
+            }
+        ]
+    }
+}
+</pre>
+                </uib-accordion-group>
+                <uib-accordion-group heading="Example YAML">
+<pre class="code">
+authors:
+    - name: Tom Preston-Werner
+      github: mojombo
+
+    - name: Parker Moore
+      github: parkr
+
+    - name: Liu Fengyun
+      github: liufengyun
+</pre>
+                </uib-accordion-group>
+                <uib-accordion-group heading="Example XML">
+<pre class="code">
+&lt;xml&gt;
+&lt;item attr=&quot;test1&quot;&gt;
+    &lt;some-object some-attr=&quot;some-value&quot;&gt;
+        some-text
+    &lt;/some-object&gt;
+    &lt;some-other-object some-attr=&quot;some-other-value&quot;&gt;
+        some-other-text
+    &lt;/some-other-object&gt;
+&lt;/item&gt;
+&lt;item attr=&quot;test1&quot;&gt;
+    &lt;some-object some-attr=&quot;some-value&quot;&gt;
+        some-text
+    &lt;/some-object&gt;
+    &lt;some-other-object some-attr=&quot;some-other-value&quot;&gt;
+        some-other-text
+    &lt;/some-other-object&gt;
+&lt;/item&gt;
+&lt;item attr=&quot;test2&quot;&gt;2&lt;/item&gt;
+&lt;/xml&gt;
+</pre>
+                </uib-accordion-group>
+            </uib-accordion>
+        </div>
+    </div>
+</div>
